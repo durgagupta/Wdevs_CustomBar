@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="customer_group" resource="default" engine="innodb" comment="Customer Group">
+        <column xsi:type="int" name="customer_group_id" unsigned="true" nullable="false" identity="true"/>
+        <column xsi:type="text" name="custom_bar_content" nullable="false" length="500" comment="custom bar content"/>
+    </table>
+</schema>

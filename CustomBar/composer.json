@@ -1,0 +1,22 @@
+{
+    "name": "wdevs/module-custombar",
+    "description": "custom bar for customer group",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "durga shankar gupta",
+            "email": "dsguptas@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wdevs\\CustomBar\\": ""
+        }
+    }
+}

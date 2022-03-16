@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Customer\Model\ResourceModel\GroupRepository">
+		<plugin name="Wdevs_CustomBar_Plugin_Magento_Customer_Model_ResourceModel_GroupRepository" 
+        type="Wdevs\CustomBar\Plugin\Magento\Customer\Model\ResourceModel\GroupRepository" 
+        sortOrder="10" disabled="false"/>
+	</type>
+
+	<type name="Magento\Customer\Model\ResourceModel\Group">
+		<plugin name="Wdevs_CustomBar_Plugin_Magento_Customer_Model_ResourceModel_Group" 
+		type="Wdevs\CustomBar\Plugin\Magento\Customer\Model\ResourceModel\Group" sortOrder="10" 
+		disabled="false"/>
+	</type>
+</config>

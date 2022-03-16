@@ -1,0 +1,35 @@
+
+<?php
+/**
+ * @var $block \Wdevs\CustomBar\Block\CustomBar
+ */
+$helper = $block->getCustomBarHerlper();
+?>
+
+<?php if ($helper->isEnabled()) : ?>
+
+    <div class="custom-bar" data-bind="scope: 'custom-bar'">
+        <!-- ko if: customer().fullname  -->
+        <div class="logged-in-message"
+                data-bind="html: customBarData().group_data"></div>
+        <!-- /ko -->
+        <!-- ko ifnot: customer().fullname  -->
+        <div class="not-logged-in-message"
+                data-bind="html: '<?php echo $helper->getCustomBarContent(); ?>'"></div>
+        <!-- /ko -->
+    </div>
+    <script type="text/x-magento-init">
+    {
+        "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "custom-bar": {
+                            "component": "Wdevs_CustomBar/js/customBar"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+<?php endif; ?>

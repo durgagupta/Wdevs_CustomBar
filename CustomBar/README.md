@@ -15,9 +15,9 @@
 
 * To Enable Modules
 
-![ScreenShot](./doc/Configuration_Settings_Stores_ Magento_Admin.png)
+<img src="doc/Configuration_Settings_Stores_ Magento_Admin.png" >
 
 
 * To Mange Content according to customer group
 
-![ScreenShot](/doc/Customer_Groups_Customers_Magento_Admin.png)
+<img src="doc/Customer_Groups_Customers_Magento_Admin.png" >

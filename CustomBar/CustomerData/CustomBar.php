@@ -18,15 +18,13 @@ class CustomBar implements SectionSourceInterface
 
     protected $customBarHelper;
 
+    
     /**
-     * Constructor
+     * Undocumented function
      *
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param CusomtBarHelper $customBarHelper
      */
-    public function __construct(\Psr\Log\LoggerInterface $logger,
-                                CusomtBarHelper $customBarHelper) {
-
-        $this->logger = $logger;
+    public function __construct(CusomtBarHelper $customBarHelper) {
         $this->customBarHelper = $customBarHelper;
     }
 
